@@ -118,3 +118,56 @@ Shorthand for creating lists:
 `(4 5 6 7)
 ; => `(4 5 6 7)
 ```
+
+Accessing list elements:
+```scheme
+(define fruit '("Apple" "Orange" "Mango" "Kiwi"))
+
+(car fruit)
+; => "Apple"
+(cdr fruit)
+; => '("Orange" "Mango" "Kiwi")
+(cdr (cdr fruit))
+; => '("Mango" "Kiwi")
+(cdr (cdr (cdr fruit)))
+; => '("Kiwi")
+```
+This is because they are in linked list format. Iterator functions exist however to search for things recursively.
+
+Functions:
+```scheme
+(define (hello-world)
+    ("Hello, World!")
+```
+This looks a lot like just any variable. That's because it really is. If we call it we get our value
+```scheme
+(hello-world )
+; => "Hello, World!"
+```
+
+Now lets add arguments:
+```scheme
+(define (hello-space planet)
+    (string-append "Hello, " planet)
+
+(hello-space "Neptune")
+; => "Hello, Neptune"
+
+(hello-space "Venus")
+; => "Hello, Venus"
+```
+
+If statements:
+```scheme
+(define n 12)
+
+(if (< n 24)
+    ("n is smaller than 24"))
+; => "n is smaller than 24"
+
+(if (> n 20)
+    (set! n 100)
+("still small"))
+; => "still small"
+```
+* The syntax for if statements is: `(if (condition) (do this) (else do this))
