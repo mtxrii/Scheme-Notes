@@ -170,4 +170,4 @@ If statements:
 ("still small"))
 ; => "still small"
 ```
-* The syntax for if statements is: `(if (condition) (do this) (else do this))
+* The syntax for if statements is: `(if (condition) (do this) (else do this))`
