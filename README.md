@@ -1,5 +1,5 @@
 ## How computers read code
-Lets look at normal code in c or something.
+Lets look at code we're used to in a procedural languare like c
 ```c
 x = 3 + 9 * round(20.8 / abs(-10)) - y
 ```
