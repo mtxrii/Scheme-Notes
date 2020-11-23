@@ -25,7 +25,7 @@ So the steps the system would take to evaluate the above example into nested ope
 
 Once this step is complete, our machine can read these nested expressions and solve them.
 
-But what if we skipped this step and just gave our interpreter or compiler the above code? It would take it in and solve it immediately without wasting time evaluating it into nested expressions.
+But what if we skipped this step and just gave our interpreter or compiler the above code? It would take it in and solve it immediately without wasting time evaluating it into nested expressions. This is known as a declarative approach
 
 # Scheme
 Thats what scheme does. And in a surprisingly human-readable way too.
